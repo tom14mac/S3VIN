@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/s3vinautomation">
+        <classes>
+            <class name="com.qa.s3vin_test.LTSPayroll_Step2">
+                <methods><include name="initilization"/><include name="check_Login"/>
+                </methods></class><class name="com.qa.s3vin_test.LoginPageTest">
+                <methods><include name="Check_login_instance"/><include name="Check_validation"/>
+                <include name="check_Email_validation"/><include name="check_invalid_Email"/>
+                    <include name="check_invalid_password"/><include name="check_Invalid_Credentials"/>
+                    <include name="check_valid_Credentials"/></methods></class><class name="com.qa.s3vin_test.Payroll_LTSPage">
+                  <methods><include name="startReport"/>
+                      <include name="Check_login_instance"/>
+                      <include name="check_Companyname"/>
+                      <include name="check_customer"/>
+                      <include name="Verify_import_LTSTime_sheet"/>
+                      <include name="add_new_payroll"/>
+                      <include name="check_Titmesheet"/>
+                      <include name="Check_payroll_status"/>
+                      <include name="check_Employee_details"/>
+                      <include name="check_Hours_Unit"/>
+                      <include name="Hold_Payroll"/>
+                      <include name="check_Export_Button"/>
+                      <include name="Check_Refresh_Button"/>
+                      <include name="Check_New_PayrollEntry"/>
+                      <include name="New_payroll_with_salary"/>
+                      <include name="Check_Edit_payroll"/>
+                      <include name="check_edit_deduction"/>
+                      <include name="check_Edit_Payrate"/>
+                      <include name="check_View_Minimum_Wages"/>
+                      <include name="Override_Payment"/>
+                      <include name="override_Payrate"/>
+                  </methods></class><class name="com.qa.s3vin_test.Test_Login">
+                <methods><include name="check"/>
+                <include name="check_validation"/>
+                    <include name="check_Email_validatin"/>
+                    <include name="invalid_credentials_check"/>
+                    <include name="check_valid_credentials"/>
+                </methods></class><class name="Testcase.com.qa.s3vin_test.LTS_Payroll_Step2">
+                <methods><include name="login_check"/>
+                    <include name="Check_CompanyName"/>
+                    <include name="Check_CustomerName"/>
+                    <include name="Add_new_Payroll_daily"/>
+                    <include name="check_LTSPaydata"/>
+                    <include name="select_Timesheet"/>
+                    <include name="Check_calculation"/>
+                    <include name="Add_new_Emp"/>
+                </methods></class></classes></test></suite>
